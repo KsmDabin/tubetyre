@@ -15,6 +15,10 @@ header {
     background-color: black;
     color: white;
     padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -30,6 +34,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cccccc;
 }
 
 /* Social Links */
@@ -53,12 +62,14 @@ footer {
     background-color: black;
     color: white;
     padding: 2rem;
+    width: 100%;
     margin-top: 2rem;
 }
 
 .contact-info {
     max-width: 1200px;
     margin: 0 auto;
+    color: white;
 }
 
 .social-contacts {
