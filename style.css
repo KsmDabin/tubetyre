@@ -50,11 +50,51 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 999;
 }
 
-.social-links img {
+.social-link {
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.social-link img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+/* WeChat QR Code Popup */
+.wechat {
+    position: relative;
+}
+
+.qr-code {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.wechat:hover .qr-code {
+    display: block;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
 }
 
 /* Footer Styles */
