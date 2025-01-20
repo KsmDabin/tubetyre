@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    padding-top: 80px; /* 헤더 높이만큼 여백 추가 */
 }
 
 /* Header Styles */
@@ -21,10 +22,22 @@ header {
     z-index: 1000;
 }
 
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 nav ul {
     display: flex;
-    justify-content: flex-end;
     list-style: none;
+    margin-left: auto;
 }
 
 nav ul li {
@@ -39,6 +52,13 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #cccccc;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 /* Social Links */
@@ -109,7 +129,6 @@ footer {
 .contact-info {
     max-width: 1200px;
     margin: 0 auto;
-    color: white;
 }
 
 .social-contacts {
