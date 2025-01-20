@@ -10,14 +10,26 @@
       "use": "@vercel/static"
     },
     {
-      "src": "images/**",
+      "src": "images/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/procedure",
+      "dest": "/procedure.html"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ]
-} 
+}
