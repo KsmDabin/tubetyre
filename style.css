@@ -84,6 +84,7 @@ main {
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: white;
 }
 
 .social-link:hover {
@@ -133,6 +134,12 @@ footer {
 
 .social-contacts {
     margin-top: 1rem;
+}
+
+/* Footer Contact Info */
+.contact-info a {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Production Procedure Styles */
