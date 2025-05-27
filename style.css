@@ -28,6 +28,7 @@ header {
 .logo {
     height: 50px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 nav {
@@ -35,12 +36,13 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 nav ul li {
