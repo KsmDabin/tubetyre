@@ -196,4 +196,33 @@ footer {
     .procedure-images {
         grid-template-columns: 1fr;
     }
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4개 한 줄 */
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-items: center; /* 가운데 정렬 */
+}
+
+.product-images img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .product-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .product-images {
+        grid-template-columns: 1fr;
+    }
 } 
